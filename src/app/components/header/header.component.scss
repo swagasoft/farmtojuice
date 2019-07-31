@@ -1,0 +1,22 @@
+#slider-animation{max-height:550px;}
+.heading-box h2{ width:100%; color: red; }
+h2, p{color:rgb(245, 12, 156);}
+.carousel-item img{width:100%;}
+.text-box {
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	right: 15%;
+	color: #000;
+	transform: translateY(-50%);
+}
+
+section{
+  border: 10px;
+  border-bottom: 15px;
+}
+h2{
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+
+}
