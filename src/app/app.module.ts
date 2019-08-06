@@ -24,6 +24,7 @@ import { CarrotComponent } from './components/carrot/carrot.component';
 import { PineapleComponent } from './components/pineaple/pineaple.component';
 import { WatermelonComponent } from './components/watermelon/watermelon.component';
 import { TestimoniesComponent } from './components/testimonies/testimonies.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { TestimoniesComponent } from './components/testimonies/testimonies.compo
     AppRoutingModule,
     RouterModule
   ],
-  providers: [],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy},],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
